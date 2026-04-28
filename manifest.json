@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "manaba Saturday Remover",
+  "version": "1.0.0",
+  "description": "中央大学のmanabaにて、時間割から土曜日列を削除する拡張機能です。",
+  "content_scripts": [
+    {
+        "matches": ["https://room.chuo-u.ac.jp/ct/*"],
+        "css": ["style.css"],
+        "run_at": "document_start"
+    }
+  ]
+}
